@@ -31,17 +31,21 @@
         var req_address = $("#order_address2").val();
         var req_number = $("#order_number2").val();
 
-        if (req_name == "") {
+        if (req_name === "") {
           alert("주문자 이름을 입력해주세요!");
-        } else if (isNaN(req_quantity) == true) {
+        } else if (isNaN(req_quantity) === true) {
           alert("수량을 입력해주세요!");
-        } else if (req_address == "") {
+        } else if (req_address === "") {
           alert("주소를 입력해주세요!");
-        } else if (req_number == "") {
+        } else if (req_number === "") {
           alert("전화번호를 입력해주세요!");
         } else {
-          alert("주문이 완료되었습니다! 감사합니다.");
-        }
+            alert("주문이 완료되었습니다! 감사합니다.");
+          }
+      }
+
+      function confirm() {
+        msg = "아래의 정보가 맞습니까?";
       }
     </script>
   </head>
